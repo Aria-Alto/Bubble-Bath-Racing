@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5993b9b327292ea478f299069fda2008
+timeCreated: 1518323920
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Prefabs/Albatros.prefab
+  uploadId: 237202

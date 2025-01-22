@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9841db44269ebe143abd7457e8d15053
+timeCreated: 1517736434
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Materials/Cormorant.mat
+  uploadId: 237202

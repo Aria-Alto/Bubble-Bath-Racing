@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a7f0813ff34c387468891282ae3c621a
+timeCreated: 1518765353
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Prefabs/Blade.prefab
+  uploadId: 237202

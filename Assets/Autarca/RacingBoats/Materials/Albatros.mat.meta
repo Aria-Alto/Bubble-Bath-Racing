@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 03f565f0b3b5ae14c844a40c714461b3
+timeCreated: 1517736434
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Materials/Albatros.mat
+  uploadId: 237202

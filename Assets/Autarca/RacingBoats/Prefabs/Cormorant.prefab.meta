@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 31945807682d1a543b2df936bb0de2ee
+timeCreated: 1518393997
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Prefabs/Cormorant.prefab
+  uploadId: 237202

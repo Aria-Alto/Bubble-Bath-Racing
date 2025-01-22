@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4bf8607077734774c8d66ac1302dcba8
+timeCreated: 1517736621
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 111639
+  packageName: Racing Boats Pack
+  packageVersion: 1.0
+  assetPath: Assets/Autarca/RacingBoats/Prefabs/Needle.prefab
+  uploadId: 237202
