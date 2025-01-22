@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter))]
@@ -5,9 +6,16 @@ using UnityEngine;
 public class WaterManager : MonoBehaviour
 {
     MeshFilter meshFilter;
+    public Material waterMaterial;
+    private Vector2 matOffset;
+    public float matSpeed = -0.0003f;
 
     private void Awake() {
         meshFilter = GetComponent<MeshFilter>();
+    }
+
+    private void Start() {
+        matOffset = new Vector2(0, 0);
     }
 
     private void Update() {
@@ -18,6 +26,20 @@ public class WaterManager : MonoBehaviour
         }
         meshFilter.mesh.vertices = verticies;
         meshFilter.mesh.RecalculateNormals();
+
+        OffsetMaterial();
     }
-    
+
+    private void OffsetMaterial()
+    {
+        matOffset.y += matSpeed;// * Time.deltaTime;
+        // if (matOffset.x > 1f) {
+        //     matOffset.x -= 1f;
+        // }
+        // if (matOffset.x < -1f) {
+        //     matOffset.x += 1f;
+        // }
+
+        waterMaterial.mainTextureOffset = matOffset;
+    }
 }
