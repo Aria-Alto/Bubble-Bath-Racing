@@ -4,6 +4,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     private float speed = 100f;
+    public float rotationSpeed = 75f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,13 +22,12 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftArrow)) {
             rb.freezeRotation = true;
-            transform.Rotate(-transform.up);
+            transform.Rotate(-transform.up * rotationSpeed * Time.deltaTime);
             rb.freezeRotation = false;
         }
         if (Input.GetKey(KeyCode.RightArrow)) {
             rb.freezeRotation = true;
-            transform.Rotate(transform.up);
-
+            transform.Rotate(transform.up * rotationSpeed * Time.deltaTime);
             rb.freezeRotation = false;
         }
     }
