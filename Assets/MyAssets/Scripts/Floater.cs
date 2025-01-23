@@ -17,7 +17,6 @@ public class Floater : MonoBehaviour
         rb.AddForceAtPosition(Physics.gravity / floaterCount, transform.position, ForceMode.Acceleration);
 
         float waveHeight = WaveManager.instance.GetWaveHeight(transform.position.x) + WaveManager.instance.transform.position.y;
-        Debug.Log(waveHeight);
         if (transform.position.y < waveHeight) {
             // Calculating how deep is the object is sunk
             float displacementMultiplyer = Mathf.Clamp01((waveHeight - transform.position.y) / depthBeforeSubmered) * displacementAmount;

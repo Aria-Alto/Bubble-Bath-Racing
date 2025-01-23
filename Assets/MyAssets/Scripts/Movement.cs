@@ -4,11 +4,14 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     private float speed = 100f;
+    private float boostSpeed = 500f;
+    private float regularSpeed = 100;
     public float rotationSpeed = 75f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        speed = regularSpeed;
     }
 
     // Update is called once per frame
@@ -29,6 +32,15 @@ public class Movement : MonoBehaviour
             rb.freezeRotation = true;
             transform.Rotate(transform.up * rotationSpeed * Time.deltaTime);
             rb.freezeRotation = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        Debug.LogWarning("Triggered");
+        if (other.gameObject.tag == "speed_boost") {
+            Debug.Log("boost");
+            speed = boostSpeed;
+            Destroy(other.gameObject);
         }
     }
 }
