@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - speed_boost
+  - d_uTurnLeft
+  - d_uTurnRight
+  - d_LeftTurn
+  - d_RightTurn
   layers:
   - Default
   - TransparentFX

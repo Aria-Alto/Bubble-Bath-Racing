@@ -36,9 +36,7 @@ public class Movement : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.LogWarning("Triggered");
         if (other.gameObject.tag == "speed_boost") {
-            Debug.Log("boost");
             speed = boostSpeed;
             Destroy(other.gameObject);
         }
