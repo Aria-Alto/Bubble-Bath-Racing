@@ -1,11 +1,12 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
-    private float speed = 100f;
+    private float speed = 300f;
     private float boostSpeed = 500f;
-    private float regularSpeed = 100;
+    private float regularSpeed = 300;
     public float rotationSpeed = 75f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,10 +36,16 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "speed_boost") {
-            speed = boostSpeed;
-            Destroy(other.gameObject);
-        }
+    // private void OnTriggerEnter(Collider other) {
+    //     if (other.gameObject.tag == "speed_boost") {
+    //         speed = boostSpeed;
+    //         Destroy(other.gameObject);
+    //     }
+    // }
+
+    public async Task BoostSpeed() {
+        speed = boostSpeed;
+        await Task.Delay(3000);
+        speed = regularSpeed;
     }
 }
