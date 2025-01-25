@@ -10,6 +10,8 @@ public class UiManage_BBR : MonoBehaviour
     public Image TurnRight;
     public Image UturnRight;
     public Image UturnLeft;
+    public Image movementSpeedometer;
+    public Image boosterSpeedometer;
     void Start()
     {
         ResetDirections();   
@@ -76,6 +78,15 @@ public class UiManage_BBR : MonoBehaviour
         UturnRight.enabled = false;
         UturnLeft.enabled = false;
     }
+
+    public void ShowMovementSapeedometer(bool show) {
+        movementSpeedometer.gameObject.SetActive(show);
+    }
+
+    public void ShowBoosterSapeedometer(bool show) {
+        boosterSpeedometer.gameObject.SetActive(show);
+    }
+    
 }
 
 
