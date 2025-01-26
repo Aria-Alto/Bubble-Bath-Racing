@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
-    private float speed = 300f;
+    private float speed = 700f;
     private float boostSpeed = 500f;
     private float regularSpeed = 300;
     public float rotationSpeed = 75f;
